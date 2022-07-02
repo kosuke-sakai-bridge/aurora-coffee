@@ -5,8 +5,8 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>next-tutorial</title>
-        <meta name="og:title" content="next-tutorial" />
+        <title>next-template</title>
+        <meta name="og:title" content="next-template" />
       </Head>
       <div className="top">
         <div className="l-wrapper">
