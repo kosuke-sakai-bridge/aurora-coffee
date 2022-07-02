@@ -1,0 +1,22 @@
+@charset 'utf-8';
+@use 'sass:math';
+@use '../fundation/variable' as *;
+@use '../fundation/mixin' as *;
+@use '../fundation/function' as *;
+
+.l-footer {
+
+  background-color: #333;
+  text-align: center;
+  padding: 15px 0;
+
+  small {
+    @include fz(12, true, false, 700, 100);
+    font-family: $ff-en;
+    color: #fff;
+  }
+
+  @include media(sm) {
+    
+  }
+}

@@ -1,0 +1,15 @@
+@charset 'utf-8';
+@use 'sass:math';
+@use '../fundation/variable' as *;
+@use '../fundation/mixin' as *;
+@use '../fundation/function' as *;
+
+.c-title {
+  &__top {
+    @include fz(20, true, false, 500, 100);
+    font-family: $ff-en;
+  }
+
+  @include media(sm) {
+  }
+}

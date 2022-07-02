@@ -1,0 +1,33 @@
+@charset 'utf-8';
+@use 'sass:math';
+@use '../fundation/variable' as *;
+@use '../fundation/mixin' as *;
+@use '../fundation/function' as *;
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 40px 0 32px;
+  z-index: 9999;
+  ul {
+    display: flex;
+    li {
+      a {
+        font-family: $ff-en;
+        @include fz(15, true, false, 400, 100);
+      }
+      &:nth-child(n + 2) {
+        margin-left: 32px;
+      }
+    }
+  }
+
+  @include media(sm) {
+    
+  }
+}
