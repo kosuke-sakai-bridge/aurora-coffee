@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect } from 'react'
 
 // コンポーネント
 import Title from '../components/top/title'
@@ -8,7 +9,75 @@ import Card from '../components/top/card'
 import Button from '../components/button'
 import News from '../components/top/news'
 
+// プラグイン
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+
 const Home = () => {
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.to(".top__lead--image", {
+      scrollTrigger: {
+        trigger: '.top__mv',
+        start: 'center'
+      },
+      duration: 1.5,
+      y: -20,
+      opacity: 1,
+      ease: "power2.out",
+      stagger: {
+        from: "start",
+        amount: 0.8
+      }
+    })
+    gsap.to(".top__menu li", {
+      scrollTrigger: {
+        trigger: '.top__eyecatch',
+        start: 'top'
+      },
+      duration: 1.5,
+      y: -10,
+      delay: 0.6,
+      opacity: 1,
+      ease: "power2.out",
+      stagger: {
+        from: "start",
+        amount: 0.8
+      }
+    })
+    gsap.to(".top__shop--image", {
+      scrollTrigger: {
+        trigger: '.top__menu',
+        start: 'top'
+      },
+      duration: 1.5,
+      y: -10,
+      delay: 0.8,
+      opacity: 1,
+      ease: "power2.out",
+      stagger: {
+        from: "start",
+        amount: 0.8
+      }
+    })
+    gsap.to(".top__news--right li", {
+      scrollTrigger: {
+        trigger: '.top__shop',
+        start: 'top'
+      },
+      duration: 1.5,
+      x: -10,
+      delay: 0.6,
+      opacity: 1,
+      ease: "power2.out",
+      stagger: {
+        from: "right",
+        amount: 0.8
+      }
+    })
+  }, []);
+
   return (
     <>
       <Head>
