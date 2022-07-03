@@ -6,8 +6,8 @@
 
 .c-title {
   &__top {
-    @include fz(20, true, false, 500, 100);
     font-family: $ff-en;
+    @include fz(32, true, false, 400, 100);
   }
 
   @include media(sm) {

@@ -7,7 +7,6 @@ export default function Layout({ children }) {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" contents="Tutorial" />
       </Head>
       <Header />
       {children}

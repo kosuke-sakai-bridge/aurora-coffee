@@ -5,15 +5,33 @@
 @use '../fundation/function' as *;
 
 .l-footer {
-
-  background-color: #333;
-  text-align: center;
-  padding: 15px 0;
-
-  small {
-    @include fz(12, true, false, 700, 100);
-    font-family: $ff-en;
-    color: #fff;
+  padding: 64px 0 72px;
+  &__inner {
+    text-align: center;
+    &--logo {
+      margin-bottom: 48px;
+    }
+    nav {
+      margin-bottom: 56px;
+      ul {
+        display: flex;
+        justify-content: center;
+        li {
+          a {
+            font-family: $ff-en;
+            @include fz(14, true, false, 400, 100);
+          }
+          &:nth-child(n + 2) {
+            margin-left: 32px;
+          }
+        }
+      }
+    }
+    small {
+      @include fz(12, true, false, 400, 100);
+      font-family: $ff-en;
+      color: #aaa;
+    }  
   }
 
   @include media(sm) {

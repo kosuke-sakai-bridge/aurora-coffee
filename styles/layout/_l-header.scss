@@ -6,23 +6,28 @@
 
 .l-header {
   position: fixed;
-  top: 0;
+  top: 40px;
   left: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 32px 40px 0 32px;
   z-index: 9999;
-  ul {
+  &__inner {
     display: flex;
-    li {
-      a {
-        font-family: $ff-en;
-        @include fz(15, true, false, 400, 100);
-      }
-      &:nth-child(n + 2) {
-        margin-left: 32px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    nav {
+      ul {
+        display: flex;
+        li {
+          a {
+            font-family: $ff-en;
+            @include fz(14, true, false, 400, 100);
+            color: #fff;
+          }
+          &:nth-child(n + 2) {
+            margin-left: 32px;
+          }
+        }
       }
     }
   }

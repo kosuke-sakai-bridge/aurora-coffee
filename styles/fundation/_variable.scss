@@ -13,8 +13,8 @@ $smHeaderHeight: vw(40); // ヘッダーの高さ（SM）
 
 // フォント
 // ----------------------------------------------------------------------
-$ff-jp: 'Noto Sans JP', sans-serif; // 400|500|700
-$ff-en: 'Poppins', sans-serif;       // 400|500|700
+$ff-jp: 'Noto Sans JP', sans-serif;
+$ff-en: 'Marcellus', serif;
 
 
 
@@ -22,7 +22,7 @@ $ff-en: 'Poppins', sans-serif;       // 400|500|700
 // ex) color: getColor(text);
 // ----------------------------------------------------------------------
 $propColor: (
-  text: #333,
+  text: #262626,
   link: #333,
   border: #333,
   selection: #87ceeb,

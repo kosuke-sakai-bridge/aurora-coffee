@@ -37,6 +37,7 @@ body {
   -ms-text-size-adjust: 100%;
   text-size-adjust: none;
   min-width: $lgMinWidth;
+  background-color: #EDECE7;
 
   @include media(sm) {
     min-width: initial;
