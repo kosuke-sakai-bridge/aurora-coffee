@@ -103,8 +103,11 @@ const Home = () => {
                     テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。
                   </p>
                 </div>
-                <div className="top__lead--image">
+                <div className="top__lead--image l-lg">
                   <Image src="/top/img_lead.jpg" alt="" width={565} height={565}></Image>
+                </div>
+                <div className="top__lead--image l-sm">
+                  <Image src="/top/img_lead_sp.jpg" alt="" width={335} height={223}></Image>
                 </div>
               </div>
 

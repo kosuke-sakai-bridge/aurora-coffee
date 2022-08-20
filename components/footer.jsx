@@ -5,10 +5,17 @@ const Footer = () => {
   return (
     <footer className="l-footer">
       <div className="l-footer__inner">
-        <div className="l-footer__inner--logo">
+        <div className="l-footer__inner--logo l-lg">
           <Link href="/">
             <a>
               <Image src="/common/footer_logo.svg" alt='Aurora COFFEE' width={300} height={28}></Image>
+            </a>
+          </Link>
+        </div>
+        <div className="l-footer__inner--logo l-sm">
+          <Link href="/">
+            <a>
+              <Image src="/common/footer_logo_sp.svg" alt='Aurora COFFEE' width={220} height={22}></Image>
             </a>
           </Link>
         </div>

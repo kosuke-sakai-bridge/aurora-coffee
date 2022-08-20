@@ -10,6 +10,9 @@
     text-align: center;
     &--logo {
       margin-bottom: 48px;
+      a {
+        display: block;
+      }
     }
     nav {
       margin-bottom: 56px;
@@ -33,8 +36,28 @@
       color: #aaa;
     }  
   }
-
   @include media(sm) {
-    
+    padding: vh(48) 0;
+    &__inner {
+      &--logo {
+        margin-bottom: vh(32);
+      }
+      nav {
+        margin-bottom: vh(40);
+        ul {
+          li {
+            a {
+              @include fz(13, true);
+            }
+            &:nth-child(n + 2) {
+              margin-left: vw(32);
+            }
+          }
+        }
+      }
+      small {
+        @include fz(11, true);
+      }  
+    }
   }
 }

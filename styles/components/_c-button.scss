@@ -15,7 +15,10 @@
   width: 320px;
   height: 72px;
   border-radius: 36px;
-
   @include media(sm) {
+    @include fz(15, true);
+    width: vw(280);
+    height: vh(56);
+    border-radius: vw(36);
   }
 }

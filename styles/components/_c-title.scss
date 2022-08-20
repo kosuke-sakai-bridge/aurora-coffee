@@ -8,8 +8,8 @@
   &__top {
     font-family: $ff-en;
     @include fz(32, true, false, 400, 100);
-  }
-
-  @include media(sm) {
+    @include media(sm) {
+      @include fz(24, true);
+    }  
   }
 }
