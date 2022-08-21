@@ -15,6 +15,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 const Home = () => {
 
+  // GSAP アニメーション処理
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
     gsap.to(".top__lead--image", {
@@ -38,7 +39,7 @@ const Home = () => {
       },
       duration: 1.5,
       y: -10,
-      delay: 0.6,
+      delay: 0.3,
       opacity: 1,
       ease: "power2.out",
       stagger: {
@@ -53,7 +54,7 @@ const Home = () => {
       },
       duration: 1.5,
       y: -10,
-      delay: 0.8,
+      delay: 0.6,
       opacity: 1,
       ease: "power2.out",
       stagger: {
