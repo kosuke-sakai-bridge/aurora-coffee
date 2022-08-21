@@ -68,7 +68,6 @@ const Home = () => {
       },
       duration: 1.5,
       x: -10,
-      delay: 0.6,
       opacity: 1,
       ease: "power2.out",
       stagger: {
@@ -112,12 +111,7 @@ const Home = () => {
               </div>
 
               {/* eyecatch */}
-              <div className="top__eyecatch">
-                <div className="top__eyecatch--copy">
-                  <img src="/top/img_typography.svg" alt="Tastes Like A Dream" />
-                  <img src="/top/img_typography.svg" alt="Tastes Like A Dream" />
-                </div>
-              </div>
+              <div className="top__eyecatch"></div>
 
               {/* menu */}
               <div className="top__menu">

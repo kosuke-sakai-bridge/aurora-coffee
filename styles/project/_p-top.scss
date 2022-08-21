@@ -116,37 +116,6 @@
       height: vh(375);
       background-image: url(/top/img_eyecatch_sp.jpg);
     }
-    &--copy {
-      position: absolute;
-      display: flex;
-      bottom: -4px;
-      img {
-        opacity: 0.8;
-        padding-right: 60px;
-        &:nth-child(1) {
-          animation : scrollanime01 40s -20s linear infinite;
-        }
-        &:nth-child(2) {
-          animation : scrollanime02 40s linear infinite;
-        }
-      }
-      @keyframes scrollanime01{
-        0% { transform: translateX(100%)}
-        100% { transform: translateX(-100%)}
-      }
-      @keyframes scrollanime02{
-        0% { transform: translateX(0)}
-        100% { transform: translateX(-200%)}
-      }
-      // &--copy sp
-      @include media(sm) {
-        bottom: 0;
-        img {
-          padding-right: vw(30);
-          width: 133%;
-        }
-      }
-    }
   }
 
   // menu
