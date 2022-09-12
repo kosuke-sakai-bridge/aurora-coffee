@@ -6,6 +6,7 @@
 
 .l-footer {
   padding: 64px 0 72px;
+  background-color: #3C322A;
   &__inner {
     text-align: center;
     &--logo {
@@ -22,6 +23,7 @@
         li {
           a {
             font-family: $ff-en;
+            color: #fff;
             @include fz(14, true, false, 400, 100);
           }
           &:nth-child(n + 2) {

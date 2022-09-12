@@ -4,15 +4,6 @@
 @use '../fundation/mixin' as *;
 @use '../fundation/function' as *;
 
-// コンテンツ
-.l-wrapper {
-  padding-top: $lgHeaderHeight;
-
-  @include media(sm) {
-    padding-top: $smHeaderHeight;
-  }
-}
-
 // PCのみ表示
 .l-lg {
   @include media(sm) {

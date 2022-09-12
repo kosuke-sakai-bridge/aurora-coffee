@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 
 // コンポーネント
 import Title from '../components/top/title'
-import Card from '../components/top/card'
+import Card from '../components/card'
 import Button from '../components/button'
 import News from '../components/top/news'
 
@@ -123,7 +123,7 @@ const Home = () => {
                   <Card src={'/top/img_01.jpg'} alt={'Coffee Cocktails'} title='Coffee Cocktails' price='￥600' />
                   <Card src={'/top/img_01.jpg'} alt={'Coffee Cocktails'} title='Coffee Cocktails' price='￥600' />
                 </ul>
-                <nav><Button link={'/'} name='View More' /></nav>
+                <nav><Button link={'/menu'} name='View More' /></nav>
               </div>
 
               {/* shop */}
@@ -138,7 +138,7 @@ const Home = () => {
                     <dd>京都府京都市中京区饅頭屋町595-3 大同生命ビル6F</dd>
                   </dl>
                   <p>9:00-21:00(L.0. 20:30)</p>
-                  <Button link={'/'} name='View More' />
+                  <Button link={'/shop'} name='View More' />
                 </div>
               </div>
 
@@ -147,7 +147,7 @@ const Home = () => {
                 <div className="top__news--left">
                   <Title title='NEWS' />
                   <nav>
-                    <Link href="/">
+                    <Link href="/news">
                       <a>View ALL</a>
                     </Link>
                   </nav>
