@@ -107,7 +107,7 @@ const Home = () => {
                   <Image src="/top/img_lead.jpg" alt="" width={565} height={565}></Image>
                 </div>
                 <div className="top__lead--image l-sm">
-                  <Image src="/top/img_lead_sp.jpg" alt="" width={335} height={223}></Image>
+                  <Image src="/top/img_lead_sp.jpg" alt="" width={375} height={249}></Image>
                 </div>
               </div>
 

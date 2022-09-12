@@ -15,7 +15,6 @@
     // タブ
     .react-tabs__tab-list {
       display: flex;
-      flex-wrap: wrap;
       margin-bottom: 48px;
       @include media(sm) {
         margin-bottom: vh(24);
