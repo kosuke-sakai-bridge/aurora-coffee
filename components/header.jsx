@@ -7,6 +7,9 @@ const Header = () => {
   const toggleHamburger = () => {
     setActive(!active ? true : false)
   }
+  const pageTransition = () => {
+    setActive(!active ? true : false)
+  }
 
   return (
     <header className="l-header">
@@ -54,17 +57,17 @@ const Header = () => {
             </div>
             <nav className="nav-sp">
               <ul>
-                <li>
+                <li onClick={pageTransition}>
                   <Link href="/menu">
                     <a>MENU</a>
                   </Link>
                 </li>
-                <li>
+                <li onClick={pageTransition}>
                   <Link href="/shop">
                     <a>SHOP</a>
                   </Link>
                 </li>
-                <li>
+                <li onClick={pageTransition}>
                   <Link href="/news">
                     <a>NEWS</a>
                   </Link>
